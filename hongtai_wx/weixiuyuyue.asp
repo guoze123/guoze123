@@ -55,15 +55,18 @@
 							</span>
 						</div>
 						<textarea name="" placeholder="详情描述"></textarea>
-						
+
 						<div id="" class="flex margintop">
 							<img src="images/ht_32.png" width="15" height="15" />
 							<span id="" class="fw_1 ellipsis font_blue bold">
 									上传照片：
 							</span>
 						</div>
-						
-						
+						<div class="">
+							<a href="javascript:;" class="file">选择文件
+								<input type="file" name="" id="">
+							</a>
+						</div>
 
 					</li>
 
@@ -83,8 +86,8 @@
 
 						$(this).toggleClass('fw_check_check')
 
-					}else{
-						
+					} else {
+
 						$(this).addClass('fw_check_check').parent().siblings('div').find('.fw_check').removeClass('fw_check_check')
 					}
 
