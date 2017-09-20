@@ -82,6 +82,11 @@ a.button, span.button {
 .font_gray{
 	color: #666;
 }
+
+.font_blue{
+	color: #0347D0;
+}
+.bold{font-weight: 500;}
 .clear{ clear:both;}
 .left{ float: left;}
 .right{ float: right;}
