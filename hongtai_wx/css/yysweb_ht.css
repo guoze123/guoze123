@@ -239,7 +239,6 @@
 }
 
 
-
 /*底部结束*/
 
 
@@ -435,45 +434,48 @@ button.user_button {
 	font-size: 1.3rem;
 }
 
+
 /*会员中心-----------------服务人员*/
-.fuwu_people{
-	
+
+.fuwu_people {
 	padding: 20px 15px !important;
 }
 
 .fuwu_people>a>div {
 	color: #ffb35b;
 }
-.fuwu_people .people_detail{
+
+.fuwu_people .people_detail {
 	padding-top: 10px;
 	font-size: 1.0rem;
 }
 
-.fuwu_btn{
+.fuwu_btn {
 	text-align: center;
 	margin-top: 15px;
 }
-.people_btn{
-	
+
+.people_btn {
 	width: 40%;
 	padding: 10px 0px;
 	border-radius: 4px;
 	border: none;
 	outline: none;
 }
-.people_btn a{
+
+.people_btn a {
 	color: #FFFFFF;
 	font-size: 1.0rem;
 }
 
-.people_btn:first-child{
-	
+.people_btn:first-child {
 	margin-right: 5%;
 }
 
+
 /*------在线预约--------*/
 
-.yuyue_category{
+.yuyue_category {
 	font-size: 1.0rem;
 	display: flex;
 	display: -webkit-box;
@@ -483,76 +485,69 @@ button.user_button {
 	width: 100%;
 	padding: 10px 0px;
 	color: #FFFFFF;
-	justify-content:center;
+	justify-content: center;
 }
 
-.yuyue_category div:first-child{
+.yuyue_category div:first-child {
 	font-weight: 600;
-	
 }
 
-.category{
+.category {
 	width: 30%;
 	background: #FFFFFF;
 	color: #0347d0;
-	
-	
 	text-align: center;
 	position: relative;
 	border-right: 1px solid #0347D0;
-	
 }
 
-.category1{
-	
-	
+.category1 {
 	border-bottom-left-radius: 5px;
 	border-top-left-radius: 5px;
-	
 	text-align: center;
 	position: relative;
 	border-right: 1px solid #0347D0;
 }
 
-.category2{
+.category2 {
 	border-bottom-right-radius: 5px;
 	border-top-right-radius: 5px;
-	
 	opacity: 0.5;
 }
-.category1 img,.category2 img{
+
+.category1 img,
+.category2 img {
 	position: absolute;
 	top: 2px;
 	right: 5px;
 }
 
-.yuyue_box{
+.yuyue_box {
 	font-size: 1.1rem;
 }
 
-.yuyue_list a div{
+.yuyue_list a div {
 	color: #0347d0;
 	font-weight: 500;
 	width: 100%;
 }
 
-.yuyue_list>a img{
+.yuyue_list>a img {
 	margin-right: 10px;
 	vertical-align: middle;
 }
 
-.yuyue_list  img{
+.yuyue_list img {
 	margin-right: 10px;
 	vertical-align: middle;
 }
 
-.yuyue_list>a input[type='date']{
-	
+.yuyue_list>a input[type='date'] {
 	font-size: 1.1rem;
 	height: 30px;
 }
 
-.yuyue_list textarea{
+.yuyue_list textarea {
 	padding: 10px 10px;
 	width: 95%;
 	height: 100px;
@@ -564,7 +559,7 @@ button.user_button {
 	font-size: 0.9rem;
 }
 
-.yuyue_list input[type='text']{
+.yuyue_list input[type='text'] {
 	display: inline-block;
 	width: 65%;
 	font-size: 1.1rem;
@@ -572,72 +567,75 @@ button.user_button {
 	font-weight: 400;
 	outline: none;
 	padding: 0;
-	
 }
-.flex img{
+
+.flex img {
 	margin-top: 8px;
 }
 
-.fw_check{
-	width: 25px;height: 25px;
+.fw_check {
+	width: 25px;
+	height: 25px;
 	background: url(../images/ht_58.png) no-repeat;
 	background-size: 25px 25px;
 	margin-right: 10px;
-	
-	
 }
 
-.fw_check_check{
+.fw_check_check {
 	background-size: 25px 25px;
 	margin-right: 10px;
 	background: url(../images/ht_57.png) no-repeat;
-	width: 25px;height: 25px;
-	
-	
+	width: 25px;
+	height: 25px;
 }
 
-.check_text{
+.check_text {
 	height: 25px;
 	line-height: 25px;
 }
-.form-group{
-	
+
+.form-group {
 	display: flex;
-	
 	margin: 20px 0px;
-	justify-content:space-around;
+	justify-content: space-around;
 }
+
+
 /*预约维修*/
+
+
 /*
  
  * 
  * 上传按钮
  * 
  * */
+
 .file {
-    position: relative;
-    display: inline-block;
-    background: #D0EEFF;
-    border: 1px solid #99D3F5;
-    border-radius: 4px;
-    padding: 4px 12px;
-    overflow: hidden;
-    color: #1E88C7;
-    text-decoration: none;
-    text-indent: 0;
-    line-height: 20px;
-}
-.file input {
-    position: absolute;
-    font-size: 100px;
-    right: 0;
-    top: 0;
-    opacity: 0;
-}
-.file:hover {
-    background: #AADFFD;
-    border-color: #78C3F3;
-    color: #004974;
-    text-decoration: none;
+	position: relative;
+	display: inline-block;
+	background: #D0EEFF;
+	border: 1px solid #99D3F5;
+	border-radius: 4px;
+	padding: 4px 12px;
+	overflow: hidden;
+	color: #1E88C7;
+	text-decoration: none;
+	text-indent: 0;
+	line-height: 20px;
 }
 
+.file input {
+	position: absolute;
+	font-size: 100px;
+	right: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.file:hover {
+	background: #AADFFD;
+	border-color: #78C3F3;
+	color: #004974;
+	text-decoration: none;
+}
