@@ -23,11 +23,23 @@
 				<ul class="order_box">
 					<li class="">
 						
-						<div class="">
+						<div class="order_evaluate">
 							<p>订单已完成</p>
-							<p></p>
-							<p></p>
+							<p>请评价一下为您服务的施工师傅吧</p>
+							<div class="evaluate_line">
 								
+							</div>
+							<p>服务评价</p>
+							
+							<div class="stars">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								
+							</div>
+							
 							
 						</div>
 
