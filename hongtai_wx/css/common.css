@@ -83,8 +83,16 @@ a.button, span.button {
 	color: #666;
 }
 
+.font_gray1{
+	color: #999;
+}
+
 .font_blue{
 	color: #0347D0;
+}
+
+.font_orange{
+	color: #ff5802;
 }
 .bold{font-weight: 500;}
 .clear{ clear:both;}

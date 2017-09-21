@@ -7,10 +7,8 @@
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 		<meta content="yes" name="apple-mobile-web-app-capable">
 		<title>维修预约</title>
-
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/yysweb_ht.css" />
-
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
 
@@ -63,9 +61,21 @@
 							</span>
 						</div>
 						<div class="">
-							<a href="javascript:;" class="file">选择文件
-								<input type="file" name="" id="">
+							<a href="javascript:;" class="filebox">
+								<label for="file1">选择文件</label>
+								<input type="file" name="" id="file1">
 							</a>
+							<a href="javascript:;" class="filebox">
+								<label for="file2">选择文件</label>
+								<input type="file" name="" id="file2">
+							</a>
+							<a href="javascript:;" class="filebox">
+								<label for="file3">选择文件</label>
+								<input type="file" name="" id="file3">
+							</a>
+							<ul class="show_img">
+								
+							</ul>
 						</div>
 
 					</li>
@@ -93,22 +103,32 @@
 
 				})
 
-				$('.category').click(function() {
-					if($(this).hasClass('true')) {
-						$(this).css({
-							'opacity': '0.5'
-						}).find('img').attr('src', 'images/ht_56.png');
-						$(this).removeClass('true');
-
-					} else {
-						$(this).css({
-							'opacity': '1'
-						}).find('img').attr('src', 'images/ht_55.png');
-						$(this).addClass('true');
-					}
+				$(".filebox").on("change","input[type='file']", function() {
+					
+					var srcs = getObjectURL(this.files[0]); //获取路径
+				
+					var htmlImg = '<li class="imgbox1">' +
+						'<div class="imgnum1">' +
+						'<span class="close1">X</span>' +
+						'<img src="' + srcs + '" class="img22" />' +
+						'</div>' +
+						'</li>';
+					$('.show_img').append(htmlImg)
 
 				})
 			})
+
+			function getObjectURL(file) {
+				var url = null;
+				if(window.createObjectURL != undefined) {
+					url = window.createObjectURL(file)
+				} else if(window.URL != undefined) {
+					url = window.URL.createObjectURL(file)
+				} else if(window.webkitURL != undefined) {
+					url = window.webkitURL.createObjectURL(file)
+				}
+				return url
+			};
 		</script>
 	</body>
 

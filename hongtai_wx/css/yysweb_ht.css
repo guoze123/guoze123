@@ -559,6 +559,17 @@ button.user_button {
 	font-size: 0.9rem;
 }
 
+.yuyue_list .textarea {
+	padding: 5px 10px;
+	width: 95%;
+	min-height: 50px;
+	margin: 0 auto;
+	display: block;
+	
+	outline: none;
+	font-size: 0.9rem;
+}
+
 .yuyue_list input[type='text'] {
 	display: inline-block;
 	width: 65%;
@@ -611,20 +622,41 @@ button.user_button {
  * 
  * */
 
+.filebox{
+	display: block;
+	position: relative;
+	margin-bottom: 15px;
+}
+.filebox label{
+	background: #f3f3f3;
+	border: 2px solid #CCCCCC;
+	color: #666;
+	text-decoration: none;
+	text-indent: 0;
+	line-height: 20px;
+	padding: 5px 12px;
+	position: absolute;
+	
+}
+
+.filebox input{
+	outline: none;
+	margin-left: 29px;
+}
+
 .file {
 	position: relative;
 	display: inline-block;
-	background: #D0EEFF;
-	border: 1px solid #99D3F5;
-	border-radius: 4px;
-	padding: 4px 12px;
+	background: #f3f3f3;
+	border: 2px solid #CCCCCC;
+	
+	padding: 5px 12px;
 	overflow: hidden;
-	color: #1E88C7;
+	color: #666;
 	text-decoration: none;
 	text-indent: 0;
 	line-height: 20px;
 }
-
 .file input {
 	position: absolute;
 	font-size: 100px;
@@ -632,10 +664,228 @@ button.user_button {
 	top: 0;
 	opacity: 0;
 }
+.img22{
+	
+	width: 100%;
+}
+.show_img{
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	justify-content: space-around;
+}
 
-.file:hover {
+.show_img li{
+	
+width: 33%;
+padding: 0;
+	
+}
+
+/*.file:hover {
 	background: #AADFFD;
 	border-color: #78C3F3;
 	color: #004974;
 	text-decoration: none;
+}*/
+
+/*测量预约弹出框*/
+.bombbox_bg{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.5;
+	z-index: 55;
+}
+.bombbox{
+	font-size: 1.0rem;
+	position: fixed;
+	z-index: 56;
+	top: 20%;
+	width: 75%;
+	left: 12.5%;
+	border-radius: 9px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	padding-bottom: 20px;
+	
+}
+.bombbox>div{
+	position: relative;
+}
+.bombbox>div .head_img{
+	position: absolute;
+	top:15%;
+	left: 35.5%;
+	
+}
+
+.bombbox>div .head_img img{
+	width:45%;
+	border-radius: 50%;
+}
+.bombbox>div>img{
+	border-radius: 10px;
+}
+
+.bombbox select{
+	width: 50%;
+    color: #999;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    border-color:#CCCCCC;
+	outline: none;
+}
+.bombbox_btn{
+	padding: 5px 0px !important;
+}
+/*-----------查看订单------------------*/
+/*
+ 
+ * 待拍订单
+ * 
+ * 
+ * */
+.order_typebox{
+	width: 100%;
+	background: #FFFFFF;
+	display: -ms-flexbox;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	font-size: 1.0rem;
+	text-align: center;
+	padding: 0px 10px;
+	
+}
+
+.order_type{
+	width: 30%;
+	padding: 6px 0px;
+	background: #FFFFFF;
+}
+.order_type_border{
+	border-bottom: 2px solid #0347D0;
+}
+.order_box{
+	font-size: 1.1rem;
+}
+
+.order_box li>div.order_list_head{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:space-between;
+	padding: 5px 0px;
+    border-bottom: 1px dashed #D9D9D9;
+	
+}
+div.order_list_head img{
+	margin-top: 9px;
+    margin-right: 10px;
+}
+
+.order_state{
+	font-size: 1.0rem;
+}
+
+.order_centent{
+	padding: 15px 0px;
+}
+.order_centent p{
+	font-size:0.9rem;
+}
+.order_btn{text-align: right;margin-top: 20px;}
+.order_btn1{
+	width: 30%;
+	padding: 8px 0px;
+	text-align: center;
+	background: #0450eb;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #0450eb;
+	font-weight: 600;
+	
+	outline: none;
+}
+
+.order_btn3{
+	width: 30%;
+	padding: 8px 0px;
+	text-align: center;
+	background: #ff5902;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #ff5902;
+	font-weight: 600;
+	
+	outline: none;
+}
+
+.min_order_btn4{
+	width: 25%;
+	padding: 8px 0px;
+	text-align: center;
+	background: #66cc33;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #66cc33;
+	font-weight: 600;
+	
+	outline: none;
+}
+.min_order_btn5{
+	width: 25%;
+	padding: 8px 0px;
+	text-align: center;
+	background: #ff5902;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #ff5902;
+	font-weight: 600;
+	outline: none;
+}
+.min_order_btn6{
+	width: 25%;
+	padding: 8px 0px;
+	text-align: center;
+	background: #ff7684;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #ff7684;
+	font-weight: 600;
+	outline: none;
+}
+
+.order_btn2{
+	width: 30%;
+	padding: 8px 0px;
+	text-align: center;
+	background: #FFFFFF;
+	color: #0450eb;
+	border: 2px solid #0450eb;
+	border-radius: 5px;
+	outline: none;
+	margin-left: 15px;
+	font-weight: 600;
+	
+}
+.shigong{
+	margin-top: 2px !important;
+}
+.gongren{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+
+.order_line{
+	width: 100%;
+	height: 1px;
+	background: #D9D9D9;
+	margin-bottom: 15px;
 }
