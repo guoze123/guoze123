@@ -13,7 +13,7 @@
 
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
-
+		<script src="js/ht_wx.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body style="font-size: 62.5%;">
@@ -191,7 +191,6 @@
 						</div>
 						<div class="">
 							<div class="form-group " id="">
-
 								<div class="flex">
 									<div class="fw_check radio fw_check_check"></div>
 									<div id="" class="check_text">
@@ -245,39 +244,41 @@
 			</div>
 
 		</div>
-
+		<div class="bombbox_bg">
+		</div>
+		<div class="bombbox">
+			<div class="">
+				<img src="images/ht_43.png" width="100%" />
+				<div class="head_img">
+					<img src="images/ht_61.png" />
+				</div>
+			</div>
+			<div class="" style="text-align: center;">
+				<div id="" style="margin-bottom: 10px;">
+					地板品牌:
+					<select name="">
+						<option value="">品牌1</option>
+						<option value="">品牌2</option>
+						<option value="">品牌3</option>
+					</select>
+				</div>
+				<div id="">
+					地板型号:
+					<select name="">
+						<option value="">型号1</option>
+						<option value="">型号2</option>
+						<option value="">型号三</option>
+					</select>
+				</div>
+			</div>
+			<button class="user_button bombbox_btn">确定</button>
+		</div>
 		<button class="user_button">提交预约</button>
 		<!--#include file="ht_footer.asp"-->
 
 		<script type="text/javascript">
 			$(function() {
-				$('.fw_check').click(function() {
-					if(!$(this).hasClass('radio')) {
-
-						$(this).toggleClass('fw_check_check')
-
-					} else {
-
-						$(this).addClass('fw_check_check').parent().siblings('div').find('.fw_check').removeClass('fw_check_check')
-					}
-
-				})
-
-				$('.category').click(function() {
-					if($(this).hasClass('true')) {
-						$(this).css({
-							'opacity': '0.5'
-						}).find('img').attr('src', 'images/ht_56.png');
-						$(this).removeClass('true');
-
-					} else {
-						$(this).css({
-							'opacity': '1'
-						}).find('img').attr('src', 'images/ht_55.png');
-						$(this).addClass('true');
-					}
-
-				})
+				
 			})
 		</script>
 	</body>

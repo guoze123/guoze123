@@ -7,11 +7,15 @@
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 		<meta content="yes" name="apple-mobile-web-app-capable">
 		<title>维修预约</title>
+		<link rel="stylesheet" type="text/css" href="css/zoom.css"/>
+
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/yysweb_ht.css" />
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
-
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zoom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ht_wx.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body style="font-size: 62.5%;">
@@ -60,21 +64,38 @@
 									上传照片：
 							</span>
 						</div>
-						<div class="">
+						<div class="" style="padding-top:15px ;">
 							<a href="javascript:;" class="filebox">
 								<label for="file1">选择文件</label>
-								<input type="file" name="" id="file1">
+								<input type="button" name="" id="file1">
 							</a>
 							<a href="javascript:;" class="filebox">
 								<label for="file2">选择文件</label>
-								<input type="file" name="" id="file2">
+								<input type="button" name="" id="file2">
 							</a>
-							<a href="javascript:;" class="filebox">
-								<label for="file3">选择文件</label>
-								<input type="file" name="" id="file3">
+							<a href="javascript:;" class="filebox ">
+								<label for="file3" class="">选择文件</label>
+								<input type="button" name="" id="file3">
 							</a>
 							<ul class="show_img">
-								
+								<li class="imgbox1">
+									<div class="imgnum1">
+										<span class="close1"></span>
+										<img src="images/ht_66.png" class="img22" data-action="zoom"/>
+									</div>
+								</li>
+								<li class="imgbox1">
+									<div class="imgnum1">
+										<span class="close1"></span>
+										<img src="images/ht_66.png" class="img22" data-action="zoom"/>
+									</div>
+								</li>
+								<li class="imgbox1">
+									<div class="imgnum1">
+										<span class="close1"></span>
+										<img src="images/ht_66.png" class="img22" data-action="zoom"/>
+									</div>
+								</li>
 							</ul>
 						</div>
 
@@ -85,28 +106,45 @@
 			</div>
 
 		</div>
-
+		<div class="bombbox_bg">
+		</div>
+		<div class="bombbox">
+			<div class="">
+				<img src="images/ht_43.png" width="100%" />
+				<div class="head_img">
+					<img src="images/ht_61.png" />
+				</div>
+			</div>
+			<div class="" style="text-align: center;">
+				<div id="" style="margin-bottom: 10px;">
+					地板品牌:
+					<select name="">
+						<option value="">品牌1</option>
+						<option value="">品牌2</option>
+						<option value="">品牌3</option>
+					</select>
+				</div>
+				<div id="">
+					地板型号:
+					<select name="">
+						<option value="">型号1</option>
+						<option value="">型号2</option>
+						<option value="">型号三</option>
+					</select>
+				</div>
+			</div>
+			<button class="user_button bombbox_btn">确定</button>
+		</div>
 		<button class="user_button">提交预约</button>
 		<!--#include file="ht_footer.asp"-->
 
 		<script type="text/javascript">
 			$(function() {
-				$('.fw_check').click(function() {
-					if(!$(this).hasClass('radio')) {
 
-						$(this).toggleClass('fw_check_check')
+				/*$(".filebox").on("change", "input[type='file']", function() {
 
-					} else {
-
-						$(this).addClass('fw_check_check').parent().siblings('div').find('.fw_check').removeClass('fw_check_check')
-					}
-
-				})
-
-				$(".filebox").on("change","input[type='file']", function() {
-					
 					var srcs = getObjectURL(this.files[0]); //获取路径
-				
+
 					var htmlImg = '<li class="imgbox1">' +
 						'<div class="imgnum1">' +
 						'<span class="close1">X</span>' +
@@ -115,9 +153,9 @@
 						'</li>';
 					$('.show_img').append(htmlImg)
 
-				})
+				})*/
 			})
-
+			/*获取图片路径*/
 			function getObjectURL(file) {
 				var url = null;
 				if(window.createObjectURL != undefined) {

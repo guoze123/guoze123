@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 		<meta content="yes" name="apple-mobile-web-app-capable">
-		<title>退货预约</title>
+		<title>赞赏</title>
 
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/yysweb_ht.css" />
@@ -20,35 +20,31 @@
 
 		<div class="ht_content">
 			<div class="hy_list">
-				<ul class="order_box">
-					<li class="">
-						
-						<div class="order_evaluate">
-							<p class="order_evaluate1">订单已完成</p>
-							<p class="order_evaluate2">请评价一下为您服务的施工师傅吧</p>
-							<div class="evaluate_line">
-								
-							</div>
-							<p class="order_evaluate3">服务评价</p>
-							
-							<div class="stars">
-								<div><img src="images/ht_65.png"/></div>
-								<div><img src="images/ht_65.png"/></div>
-								<div><img src="images/ht_65.png"/></div>
-								<div><img src="images/ht_65.png"/></div>
-								<div><img src="images/ht_65.png"/></div>
-							</div>
-							
-							<div class="fenshu font_pink">
-								
-							</div>
-							
-							<!--<div  class="evaluate_text" contenteditable="true"></div>-->
-							
+				<ul class="yuyue_box">
+					<li class="yuyue_list" style="padding-bottom: 20px; padding-top: 20px;">
+						<div id="" class="flex">
+							<span id="" class="fw_1  ">
+									请选择赞赏金额：
+							</span>
+						</div>
+						<div class="money_list">
+							<div>1元</div>
+							<div>2元</div>
+							<div>5元</div>
+							<div class="border_money">10元</div>
+							<div>20元</div>
+							<div>50元</div>
 						</div>
 						
-						<textarea name="" rows="" cols="" class="evaluate_text" placeholder="其他意见或建议"></textarea>
-
+						<div id="" class="flex margintop">
+							<span id="" class="fw_1  ">
+									土豪请随意：
+							</span>
+						</div>
+						<div id=""  class="" style="width: 90%; height: 40px;font-size: 1.0rem; margin: 0 auto; border: 1px solid #d9d9d9;margin-top: 15px;">
+							<img src="images/ht_72.png" width="30px"/><input type="text" name="" id="" value="" placeholder="输入金额"/>
+						</div>
+						
 					</li>
 
 				</ul>
@@ -57,12 +53,13 @@
 
 		</div>
 
-		<button class="user_button">提交评价</button>
+		<button class="user_button">确认提交</button>
 		<!--#include file="ht_footer.asp"-->
 
 		<script type="text/javascript">
 			$(function() {
 				
+
 			})
 		</script>
 	</body>

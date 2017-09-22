@@ -11,6 +11,8 @@
 		<link rel="stylesheet" type="text/css" href="css/yysweb_ht.css" />
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ht_wx.js" type="text/javascript" charset="utf-8"></script>
+
 	</head>
 
 	<body style="font-size: 62.5%;">
@@ -178,8 +180,10 @@
 			</div>
 
 		</div>
+		<div class="dibutishi">
+			~~~ 别扯了，没有更多了~~~
+		</div>
 
-		
 		<!--#include file="ht_footer.asp"-->
 
 		<script type="text/javascript">

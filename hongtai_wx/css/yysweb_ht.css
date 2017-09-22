@@ -591,6 +591,19 @@ button.user_button {
 	background-size: 25px 25px;
 	margin-right: 10px;
 }
+.fw_check1 {
+	width: 20px;
+	height: 20px;
+	background: url(../images/ht_71.png) no-repeat;
+	background-size: 20px 20px;
+	margin-top: 3px;
+	margin-right: 5px;
+	
+}
+.marginright{
+	margin-right: 10px;
+	margin-top: 5px;
+}
 
 .fw_check_check {
 	background-size: 25px 25px;
@@ -598,6 +611,16 @@ button.user_button {
 	background: url(../images/ht_57.png) no-repeat;
 	width: 25px;
 	height: 25px;
+}
+.fw_check_check1 {
+
+	
+	background: url(../images/ht_70.png) no-repeat;
+	background-size: 20px 20px;
+	
+	width: 20px;
+	height: 20px;
+	margin-top: 3px;
 }
 
 .check_text {
@@ -627,10 +650,32 @@ button.user_button {
 	position: relative;
 	margin-bottom: 15px;
 }
-.filebox label{
+.filebox:nth-child(1) label{
 	background: #f3f3f3;
 	border: 2px solid #CCCCCC;
 	color: #666;
+	text-decoration: none;
+	text-indent: 0;
+	line-height: 20px;
+	padding: 5px 12px;
+	position: absolute;
+	
+}
+.filebox:nth-child(2) label{
+	background: #f3f3f3;
+	border: 2px solid #CCCCCC;
+	color: #666;
+	text-decoration: none;
+	text-indent: 0;
+	line-height: 20px;
+	padding: 5px 12px;
+	position: absolute;
+	
+}
+.filebox:nth-child(3) label{
+	background: #f3f3f3;
+	border: 2px solid #0347D0;
+	color: #0347D0;
 	text-decoration: none;
 	text-indent: 0;
 	line-height: 20px;
@@ -667,6 +712,7 @@ button.user_button {
 .img22{
 	
 	width: 100%;
+	
 }
 .show_img{
 	display: flex;
@@ -677,10 +723,26 @@ button.user_button {
 
 .show_img li{
 	
-width: 33%;
-padding: 0;
+width: 28%;
+padding: 5px !important;
+margin-right: 6.3%;
 	
 }
+
+.imgnum1{
+	position: relative;
+}
+.close1{
+	position: absolute;
+	top: -5px;
+	right: -25px;
+	background: url(../images/ht_67.png) no-repeat;
+	width: 18px;
+	height: 18px;
+	background-size:18px 18px;
+	border-radius: 50%;
+}
+
 
 /*.file:hover {
 	background: #AADFFD;
@@ -689,7 +751,7 @@ padding: 0;
 	text-decoration: none;
 }*/
 
-/*测量预约弹出框*/
+/*弹出框*/
 .bombbox_bg{
 	position: fixed;
 	top: 0;
@@ -743,6 +805,16 @@ padding: 0;
 }
 .bombbox_btn{
 	padding: 5px 0px !important;
+}
+
+/*底部提示*/
+.dibutishi{
+	
+	text-align: center;
+	color: #bababa;
+	background: #F2F2F2;
+	font-size: 1.0rem;
+	padding: 5px 0px;
 }
 /*-----------查看订单------------------*/
 /*
@@ -882,7 +954,6 @@ div.order_list_head img{
 	display: -webkit-flex;
 	justify-content: space-between;
 }
-
 .order_line{
 	width: 100%;
 	height: 1px;
@@ -890,3 +961,68 @@ div.order_list_head img{
 	margin-bottom: 15px;
 }
 /*订单评价*/
+.order_evaluate{
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.order_evaluate1{}
+.order_evaluate2{font-size: 1.0rem;color: #666;}
+.evaluate_line{background: #d9d9d9;height: 1px; width: 100%; margin: 10px 0px;}
+.order_evaluate3{font-size: 1.0rem;}
+.stars{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.stars div{
+	width: 20%;
+}
+.stars div img{
+	width: 70%;
+}
+.evaluate_text{
+	width: 80%;
+	height: 100px;
+	border: 1px solid #ccc;
+	outline: none;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 15px;
+	font-size: 0.9rem;
+	padding: 5px;
+}
+.fenshu{
+	width: 40%;
+	height: 40px;
+	margin: 0 auto;
+	font-size: 0.9rem;
+}
+/*赞赏*/
+.money_list{
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+
+.money_list div{
+	width: 30%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 1.0rem;
+	border: 1px solid #999;
+	margin-right: 3.3%;
+	margin-bottom: 10px;
+	
+}
+.border_money{
+	border: 1px solid #ff5a01 !important;
+	color: #ff5a01;
+	background: url(../images/ht_41.png) no-repeat;
+	background-size:30px 30px;
+	background-position:100% 0;
+}

@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/yysweb_ht.css" />
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
-
+		<script src="js/ht_wx.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body style="font-size: 62.5%;">
@@ -41,7 +41,6 @@
 							<div id="" class="">
 								<img src="images/ht_31.png" width="25" />地址 ： <input type="text" name="" id="" value="西安市高新区科技六路中段" />
 							</div>
-
 						</a>
 					</li>
 
@@ -216,24 +215,6 @@
 
 		<script type="text/javascript">
 			$(function() {
-				$('.fw_check').click(function() {
-					if(!$(this).hasClass('radio')) {
-
-						$(this).toggleClass('fw_check_check')
-
-					} else {
-
-						$(this).addClass('fw_check_check').parent().siblings('div').find('.fw_check').removeClass('fw_check_check')
-					}
-
-				})
-				$('.bombbox_btn').click(function(){
-					$('.bombbox').css('display','none');
-					$('.bombbox_bg').css('display','none');
-					
-					
-				})
-
 			})
 		</script>
 	</body>

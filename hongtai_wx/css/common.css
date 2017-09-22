@@ -65,6 +65,7 @@ a.button, span.button {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -webkit-flex;
+	flex-wrap: wrap;
 }
 .ellipsis{
 	
@@ -89,6 +90,9 @@ a.button, span.button {
 
 .font_blue{
 	color: #0347D0;
+}
+.font_pink{
+	color: #fb4e5f;
 }
 
 .font_orange{

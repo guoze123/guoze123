@@ -134,6 +134,10 @@
 			</div>
 
 		</div>
+		<div class="dibutishi">
+			~~~ 别扯了，没有更多了~~~
+		</div>
+
 		<!--#include file="ht_footer.asp"-->
 
 	</body>

@@ -13,7 +13,7 @@
 
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
-
+		<script src="js/ht_wx.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body style="font-size: 62.5%;">
@@ -126,15 +126,14 @@
 			</div>
 
 		</div>
-
+		<div class="dibutishi">
+			~~~ 别扯了，没有更多了~~~
+		</div>
 		<!--#include file="ht_footer.asp"-->
 
 		<script type="text/javascript">
 			$(function() {
-				$('.order_type').click(function() {
-
-					$(this).addClass('order_type_border font_blue').removeClass('font_gray1').siblings().removeClass('order_type_border font_blue').addClass('font_gray1')
-				})
+				
 			})
 		</script>
 	</body>
