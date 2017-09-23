@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 		<meta content="yes" name="apple-mobile-web-app-capable">
-		<title>测量详情</title>
+		<title>订单测量详情</title>
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/yysweb_ht.css" />
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -16,50 +16,45 @@
 	</head>
 
 	<body style="font-size: 62.5%;">
-
 		<div class="ht_content">
 			<div class="hy_list">
-
-				<ul class="yuyue_box">
-
-					<li class="yuyue_list">
+				<ul class="work_order_box">
+					<li class="work_order_list">
 						<a href="javascript:;">
-							<div id="" class="">
-								<img src="images/ht_42.png" width="25" />预约日期： <span id="" class="font_gray">2017年11月21日</span>
+							<div id="" class="font_orange">
+								<img src="images/ht_45.png" width="25" />预约日期： <span id="" class="font_gray">2017年11月21日</span>
 							</div>
 						</a>
 					</li>
-					<li class="yuyue_list">
+					<li class="work_order_list">
 						<a href="">
 							<div id="" class="">
-								<img src="images/ht_30.png" width="25" />备注：
+								<img src="images/ht_46.png" width="25" />备注：
 							</div>
-
 						</a>
 						<div class="textarea">
 							尽快完成测量
 						</div>
 						<a href="javascript:;" class="margintop">
 							<div id="" class="">
-								<img src="images/ht_31.png" width="25" />地址 ： <input type="text" readonly="readonly" name="" id="" value="西安市高新区科技六路中段" />
+								<img src="images/ht_47.png" width="25" />地址 ： <input type="text" readonly="readonly" name="" id="" value="西安市高新区科技六路中段" />
 							</div>
 
 						</a>
 					</li>
 
-					<li class="yuyue_list">
+					<li class="work_order_list">
 
 						<div id="" class="flex">
-							<img src="images/ht_33.png" width="25" height="25" style="margin-top: 5px;" />
-							<span id="" class="fw_1 ellipsis font_blue">
+							<img src="images/ht_48.png" width="25" height="25" style="margin-top: 5px;" />
+							<span id="" class="fw_1 ellipsis font_orange">
 									地面是否干净整洁？
 						</span>
 						</div>
 						<div class="">
 							<div class="form-group " id="">
-
 								<div class="flex">
-									<div class="fw_check radio fw_check_check"></div>
+									<div class="fw_check radio fw_check_check2"></div>
 									<div id="" class="check_text">
 										是
 									</div>
@@ -70,16 +65,14 @@
 										否
 									</div>
 								</div>
-
 							</div>
 						</div>
 
 					</li>
-					<li class="yuyue_list">
-
+					<li class="work_order_list">
 						<div id="" class="flex">
-							<img src="images/ht_34.png" width="25" height="25" style="margin-top: 5px;" />
-							<span id="" class="fw_1 font_blue">
+							<img src="images/ht_49.png" width="25" height="25" style="margin-top: 5px;" />
+							<span id="" class="fw_1 font_orange">
 						测量范围
 						</span>
 						</div>
@@ -94,7 +87,7 @@
 							<div class="form-group " id="">
 
 								<div class="flex">
-									<div class="fw_check radio fw_check_check"></div>
+									<div class="fw_check radio fw_check_check2"></div>
 									<div id="" class="check_text">
 										是
 									</div>
@@ -111,11 +104,10 @@
 
 					</li>
 
-					<li class="yuyue_list">
-
+					<li class="work_order_list">
 						<div id="" class="flex">
-							<img src="images/ht_35.png" width="25" height="25" style="margin-top: 5px;" />
-							<span id="" class="fw_1 font_blue">
+							<img src="images/ht_50.png" width="25" height="25" style="margin-top: 5px;" />
+							<span id="" class="fw_1 font_orange">
 								不包含测量范围
 							</span>
 						</div>
@@ -126,7 +118,7 @@
 							</span>
 							<div class="form-group " id="">
 								<div class="flex">
-									<div class="fw_check radio fw_check_check"></div>
+									<div class="fw_check radio fw_check_check2"></div>
 									<div id="" class="check_text">
 										是
 									</div>
@@ -142,10 +134,10 @@
 						</div>
 
 					</li>
-					<li class="yuyue_list">
+					<li class="work_order_list">
 						<div id="" class="flex">
-							<img src="images/ht_36.png" width="25" height="25" style="margin-top: 5px;" />
-							<span id="" class="fw_1 font_blue">
+							<img src="images/ht_52.png" height="25" style="margin-top: 5px;" />
+							<span id="" class="fw_1 font_orange">
 									温馨提示
 							</span>
 						</div>
@@ -158,7 +150,7 @@
 							</span>
 							<div class="form-group " id="">
 								<div class="flex">
-									<div class="fw_check radio fw_check_check"></div>
+									<div class="fw_check radio fw_check_check2"></div>
 									<div id="" class="check_text">
 										是
 									</div>
@@ -184,7 +176,7 @@
 			~~~ 别扯了，没有更多了~~~
 		</div>
 
-		<!--#include file="ht_footer.asp"-->
+		<!--#include file="work_footer.asp"-->
 
 		<script type="text/javascript">
 			$(function() {

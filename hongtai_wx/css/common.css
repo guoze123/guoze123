@@ -98,6 +98,10 @@ a.button, span.button {
 .font_orange{
 	color: #ff5802;
 }
+
+.font_green{
+	color: #43cc00;
+}
 .bold{font-weight: 500;}
 .clear{ clear:both;}
 .left{ float: left;}

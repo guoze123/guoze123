@@ -6,11 +6,9 @@
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 		<meta content="yes" name="apple-mobile-web-app-capable">
-		<title>赞赏</title>
-
+		<title>赞赏记录</title>
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/yysweb_ht.css" />
-
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/ht_wx.js" type="text/javascript" charset="utf-8"></script>
@@ -22,29 +20,30 @@
 			<div class="hy_list">
 				<ul class="yuyue_box">
 					<li class="yuyue_list" style="padding-bottom: 20px; padding-top: 20px;">
-						<div id="" class="flex">
-							<span id="" class="fw_1  ">
-									请选择赞赏金额：
-							</span>
-						</div>
-						<div class="money_list">
-							<div>1元</div>
-							<div>2元</div>
-							<div>5元</div>
-							<div class="border_money">10元</div>
-							<div>20元</div>
-							<div>50元</div>
-						</div>
-						
+
 						<div id="" class="flex margintop">
+
 							<span id="" class="fw_1  ">
-									土豪请随意：
+									赞赏记录：
 							</span>
+
 						</div>
-						<div id=""  class="" style="width: 90%; height: 40px;font-size: 1.0rem; margin: 0 auto; border: 1px solid #d9d9d9;margin-top: 15px;">
-							<img src="images/ht_72.png" width="30px"/><input type="text" name="" id="" value="" placeholder="输入金额" class="font_gray"/>
+						<div name="" class="appreciate">
+							<div>
+								<img src="images/ht_74.png"/><span>2017-8-31</span><span> 雷健</span>  赞赏金额 <span id="" class="font_orange">+4</span> 元
+							</div>
+							<div>
+								<img src="images/ht_74.png"/>2017-8-31 雷健 赞赏金额 <span id="" class="font_orange">+4</span> 元
+							</div>
+							<div>
+								<img src="images/ht_74.png"/>2017-8-31 雷健 赞赏金额 <span id="" class="font_orange">+4</span> 元
+							</div>
+							<div>
+								<img src="images/ht_74.png"/>2017-8-31 雷健 赞赏金额 <span id="" class="font_orange">+4</span> 元
+							</div>
+
 						</div>
-						
+
 					</li>
 
 				</ul>
@@ -53,12 +52,10 @@
 
 		</div>
 
-		<button class="user_button">确认提交</button>
-		<!--#include file="ht_footer.asp"-->
+		<!--#include file="work_footer.asp"-->
 
 		<script type="text/javascript">
 			$(function() {
-				
 
 			})
 		</script>
