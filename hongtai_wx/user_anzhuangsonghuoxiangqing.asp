@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 		<meta content="yes" name="apple-mobile-web-app-capable">
-		<title>安装送货详情</title>
+		<title>安装送货详情--个人中心</title>
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/yysweb_ht.css" />
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -181,7 +181,7 @@
 			~~~ 别扯了，没有更多了~~~
 		</div>
 		
-		<!--#include file="ht_footer.asp"-->
+		<!--#include file="gerenzhongxin_footer.asp"-->
 
 		<script type="text/javascript">
 			$(function() {

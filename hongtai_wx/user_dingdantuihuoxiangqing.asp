@@ -62,7 +62,7 @@
 		</div>
 
 		
-		<!--#include file="ht_footer.asp"-->
+		<!--#include file="gerenzhongxin_footer.asp"-->
 
 		<script type="text/javascript">
 			$(function() {

@@ -22,8 +22,8 @@
 			<div class="hy_list">
 				<div class="order_typebox">
 					<div class="order_type1 order_type font_gray1">待派单</div>
-					<div class="order_type2 order_type  order_type_border font_blue">进行中</div>
-					<div class="order_type3 order_type font_gray1">已完成</div>
+					<div class="order_type2 order_type font_gray1">进行中</div>
+					<div class="order_type3 order_type order_type_border font_blue">已完成</div>
 				</div>
 
 				<ul class="order_box margintop">
@@ -68,7 +68,9 @@
 								<p class="font_gray">联系方式：1522222333</p>
 							</div>
 							<div class="order_btn">
-								<button class="order_btn3">确认完成</button>
+								<button class="min_order_btn4">投诉</button>
+								<button class="min_order_btn5">赞赏</button>
+								<button class="min_order_btn6">评价</button>
 							</div>
 						</div>
 					</li>
@@ -81,8 +83,8 @@
 									地板测量预约	
 								</span>
 							</div>
-							<div class="order_state font_orange">
-								进行中
+							<div class="order_state font_blue">
+								已完成
 							</div>
 						</div>
 						<div class="order_centent">
@@ -112,8 +114,18 @@
 								<p class="font_gray">姓名：李某某某</p>
 								<p class="font_gray">联系方式：1522222333</p>
 							</div>
+							<div class="gongren">
+								<p class="font_gray">姓名：李某某某</p>
+								<p class="font_gray">联系方式：1522222333</p>
+							</div>
+							<div class="gongren">
+								<p class="font_gray">姓名：李某某某</p>
+								<p class="font_gray">联系方式：1522222333</p>
+							</div>
 							<div class="order_btn">
-								<button class="order_btn3">确认完成</button>
+								<button class="min_order_btn4">投诉</button>
+								<button class="min_order_btn5">赞赏</button>
+								<button class="min_order_btn6">评价</button>
 							</div>
 						</div>
 					</li>
@@ -125,12 +137,13 @@
 									地板测量预约	
 								</span>
 							</div>
-							<div class="order_state font_orange">
-								进行中
+							<div class="order_state font_blue">
+								已完成
 							</div>
 						</div>
 						<div class="order_centent">
 							<div>
+								<p class="font_gray">下单时间：2017-08-31 11:46:02</p>
 								<p class="font_gray">下单时间：2017-08-31 11:46:02</p>
 								<p class="font_gray">预约时间：2017-08-31 11:46:02</p>
 							</div>
@@ -157,7 +170,9 @@
 								<p class="font_gray">联系方式：1522222333</p>
 							</div>
 							<div class="order_btn">
-								<button class="order_btn3">确认完成</button>
+								<button class="min_order_btn4">投诉</button>
+								<button class="min_order_btn5">赞赏</button>
+								<button class="min_order_btn6">评价</button>
 							</div>
 						</div>
 					</li>
@@ -169,14 +184,11 @@
 		<div class="dibutishi">
 			~~~ 别扯了，没有更多了~~~
 		</div>
-		<!--#include file="ht_footer.asp"-->
+		<!--#include file="gerenzhongxin_footer.asp"-->
 
 		<script type="text/javascript">
 			$(function() {
-				$('.order_type').click(function() {
-
-					$(this).addClass('order_type_border font_blue').removeClass('font_gray1').siblings().removeClass('order_type_border font_blue').addClass('font_gray1')
-				})
+				
 			})
 		</script>
 	</body>

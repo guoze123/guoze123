@@ -102,7 +102,7 @@
 			~~~ 别扯了，没有更多了~~~
 		</div>-->
 		
-		<!--#include file="ht_footer.asp"-->
+		<!--#include file="gerenzhongxin_footer.asp"-->
 
 		<script type="text/javascript">
 			$(function() {

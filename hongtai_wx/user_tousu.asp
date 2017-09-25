@@ -68,7 +68,7 @@
 		</div>
 
 		<button class="user_button">提交投诉</button>
-		<!--#include file="ht_footer.asp"-->
+		<!--#include file="gerenzhongxin_footer.asp"-->
 
 		<script type="text/javascript">
 			$(function() {
