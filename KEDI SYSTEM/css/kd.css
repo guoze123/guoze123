@@ -1,0 +1,55 @@
+.index_content_btn {
+  width: 630px;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+.index_content_btn div {
+  background: #e1e1e1;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  width: 130px;
+  border: 1px solid #c1c1c1;
+  margin: 10px 10px;
+}
+
+.index_content_btn div:hover {
+  border: 1px solid #0078da;
+  background: #e5f2fb;
+}
+
+.index_content_btn div.active {
+  border: 1px solid #0078da;
+  background: #e5f2fb;
+}
+
+.login_btn_box {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.login_btn_box div {
+  width: 240px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  margin: 10px auto;
+  border: 1px solid #c1c1c1;
+  background: #e1e1e1;
+}
+
+.login_btn_box div:hover {
+  border: 1px solid #0078da;
+  background: #e5f2fb;
+}
+
+.login_btn_box div.active {
+  border: 1px solid #0078da;
+  background: #e5f2fb;
+}
+/*# sourceMappingURL=kd.css.map */

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KEDI</title>
+    <link rel="icon" href="images/kd.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/kd.css">
+    <script src="script/vue.min.js"></script>
+    <script src="script/jquery-2.1.1.min.js"></script>
+    <script src="script/common.js"></script>
+    <script src="script/kedi.js"></script>
+</head>
+<body>
+    <div class="index_content_btn">
+        <div onclick='openWin("../temp/login.html?key=jisfhhs",{"width":400,"height":200,"id":"login"},function(){})'>会员管理</div>
+        <div onclick='openWin("../temp/order_admin.html",{"width":400,"height":300,"id":"order_admin"},function(){})'>订单管理</div>
+        <div>奖金计算</div>
+        <div>库存系统</div>
+        <div>铺货借货</div>
+        <div>应收账款</div>
+        <div>Teller管理</div>
+        <div>促销系统</div>
+        <div>系统设置</div>
+        <div>个人信息</div>
+        <div>版本升级</div>
+    </div>
+</body>
+<script>
+    $(function(){
+        $(".index_content_btn div").click(function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    })
+</script>
+</html>
