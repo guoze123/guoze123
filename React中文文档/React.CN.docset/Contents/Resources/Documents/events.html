@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>事件系统 | React</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="Reactjs,ReactJS,ReactJS中文,React,React中文,Reactjs中文文档">
+  <meta name="description" content="ReactJS中文文档, 用于构建用户界面的JAVASCRIPT库">
+
+  <meta property="og:title" content="事件系统 | React">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://facebook.github.io/react/docs/events.html">
+  <meta property="og:image" content="http://facebook.github.io/react/img/logo_og.png">
+  <meta property="og:description" content="用于构建用户界面的Javascript库">
+
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <link rel="stylesheet" href="../css/syntax.css">
+  <link rel="stylesheet" href="../css/codemirror.css">
+  <link rel="stylesheet" href="../css/react.css">
+
+  <!--[if lte IE 8]>
+  <script type="text/javascript" src="/react/js/html5shiv.min.js"></script>
+  <script type="text/javascript" src="/react/js/es5-shim.min.js"></script>
+  <script type="text/javascript" src="/react/js/es5-sham.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="../js/codemirror.js"></script>
+  <script type="text/javascript" src="../js/javascript.js"></script>
+  <script type="text/javascript" src="../js/react.js"></script>
+  <script type="text/javascript" src="../js/JSXTransformer.js"></script>
+  <script type="text/javascript" src="../js/live_editor.js"></script>
+  <script type="text/javascript" src="../js/showdown.js"></script>
+
+
+
+</head>
+<body>
+
+  <div class="container">
+
+
+
+    
+
+    <section class="content wrap documentationContent">
+  <div class="nav-docs">
+    <div class="nav-docs-section">
+      <h3>快速入门</h3>
+      <ul>
+        
+          <li>
+            <a href="getting-started.html">快速开始</a>
+            
+          </li>
+        
+          <li>
+            <a href="tutorial.html">教程</a>
+            
+          </li>
+        
+          <li>
+            <a href="thinking-in-react.html">深入理解React</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>指南</h3>
+      <ul>
+        
+          <li>
+            <a href="why-react.html">为什么使用 React?</a>
+            
+          </li>
+        
+          <li>
+            <a href="displaying-data.html">数据呈现</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="jsx-in-depth.html">深入理解JSX</a>
+                  </li>
+                
+                  <li>
+                    <a href="jsx-spread.html">JSX的延展属性</a>
+                  </li>
+                
+                  <li>
+                    <a href="jsx-gotchas.html">JSX的陷阱</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="interactivity-and-dynamic-uis.html">富交互性的动态用户界面</a>
+            
+          </li>
+        
+          <li>
+            <a href="multiple-components.html">复合组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="reusable-components.html">可复用组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="transferring-props.html">传递 Props</a>
+            
+          </li>
+        
+          <li>
+            <a href="forms.html">表单组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="working-with-the-browser.html">浏览器中的工作原理</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="more-about-refs.html">关于Refs的更多内容</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="tooling-integration.html">Tooling Integration</a>
+            
+          </li>
+        
+          <li>
+            <a href="addons.html">插件</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="animation.html">动画</a>
+                  </li>
+                
+                  <li>
+                    <a href="two-way-binding-helpers.html">双向绑定</a>
+                  </li>
+                
+                  <li>
+                    <a href="class-name-manipulation.html">类名操作</a>
+                  </li>
+                
+                  <li>
+                    <a href="test-utils.html">测试工具集</a>
+                  </li>
+                
+                  <li>
+                    <a href="clone-with-props.html">克隆组件</a>
+                  </li>
+                
+                  <li>
+                    <a href="update.html">Immutability Helpers</a>
+                  </li>
+                
+                  <li>
+                    <a href="pure-render-mixin.html">PureRenderMixin</a>
+                  </li>
+                
+                  <li>
+                    <a href="perf.html">性能分析工具</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>社区资源</h3>
+      <ul>
+        
+          <li>
+            <a href="videos.html">视频</a>
+            
+          </li>
+        
+          <li>
+            <a href="complementary-tools.html">其余工具</a>
+            
+          </li>
+        
+          <li>
+            <a href="examples.html">范例</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>参考</h3>
+      <ul>
+        
+          <li>
+            <a href="top-level-api.html">顶层 API</a>
+            
+          </li>
+        
+          <li>
+            <a href="component-api.html">组件 API</a>
+            
+          </li>
+        
+          <li>
+            <a href="component-specs.html">组件的详细说明和生命周期（Component Specs and Lifecycle）</a>
+            
+          </li>
+        
+          <li>
+            <a href="tags-and-attributes.html">标签和属性支持</a>
+            
+          </li>
+        
+          <li>
+            <a href="events.html" class="active">事件系统</a>
+            
+          </li>
+        
+          <li>
+            <a href="dom-differences.html">与 DOM 的差异</a>
+            
+          </li>
+        
+          <li>
+            <a href="special-non-dom-attributes.html">特殊的非 DOM 属性</a>
+            
+          </li>
+        
+          <li>
+            <a href="reconciliation.html">Reconciliation</a>
+            
+          </li>
+        
+          <li>
+            <a href="glossary.html">React （虚拟）DOM 术语</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>Flux</h3>
+      <ul>
+        
+          <li>
+            <a href="flux-overview.html">Flux概述</a>
+            
+          </li>
+        
+          <li>
+            <a href="flux-todo-list.html">Flux的TodoMVC教程</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <!-- Tips Nav -->
+  
+    <div class="nav-docs-section">
+      <h3>Tips</h3>
+      <ul>
+        
+          <li>
+            <a href="../tips/introduction.html">内容简介</a>
+          </li>
+        
+          <li>
+            <a href="../tips/inline-styles.html">内联样式</a>
+          </li>
+        
+          <li>
+            <a href="../tips/if-else-in-JSX.html">JSX 中的 If-Else</a>
+          </li>
+        
+          <li>
+            <a href="../tips/self-closing-tag.html">自闭合标签</a>
+          </li>
+        
+          <li>
+            <a href="../tips/maximum-number-of-jsx-root-nodes.html">JSX 根节点的最大数量</a>
+          </li>
+        
+          <li>
+            <a href="../tips/style-props-value-px.html">在样式props中快速制定像素值</a>
+          </li>
+        
+          <li>
+            <a href="../tips/children-props-type.html">子props的类型</a>
+          </li>
+        
+          <li>
+            <a href="../tips/controlled-input-null-value.html">值为 null 的 Controlled Input</a>
+          </li>
+        
+          <li>
+            <a href="../tips/componentWillReceiveProps-not-triggered-after-mounting.html">Mounting 后 componentWillReceiveProps 未被触发</a>
+          </li>
+        
+          <li>
+            <a href="../tips/props-in-getInitialState-as-anti-pattern.html">getInitialState 里的 Props 是一个反模式</a>
+          </li>
+        
+          <li>
+            <a href="../tips/dom-event-listeners.html">组件的 DOM 事件监听</a>
+          </li>
+        
+          <li>
+            <a href="../tips/initial-ajax.html">通过 AJAX 加载初始数据</a>
+          </li>
+        
+          <li>
+            <a href="../tips/false-in-jsx.html">JSX 的 false 处理</a>
+          </li>
+        
+          <li>
+            <a href="../tips/communicate-between-components.html">组件间的通信</a>
+          </li>
+        
+          <li>
+            <a href="../tips/expose-component-functions.html">Expose Component Functions</a>
+          </li>
+        
+          <li>
+            <a href="../tips/references-to-components.html">组件的引用</a>
+          </li>
+        
+          <li>
+            <a href="../tips/children-undefined.html">this.props.children undefined</a>
+          </li>
+        
+          <li>
+            <a href="../tips/use-react-with-other-libraries.html">与其他类库并行使用React</a>
+          </li>
+        
+          <li>
+            <a href="../tips/dangerously-set-inner-html.html">Dangerously Set innerHTML</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</div>
+
+
+  <div class="inner-content">
+    <h1>事件系统</h1>
+    <div class="subHeader"></div>
+
+    <h2><a class="anchor" name=""></a>虚拟事件对象 <a class="hash-link" href="events.html#">#</a></h2>
+<p>事件处理器将会传入<code>虚拟事件对象</code>的实例，一个对浏览器本地事件的跨浏览器封装。它有和浏览器本地事件相同的属性和方法，包括 <code>stopPropagation()</code> 和 <code>preventDefault()</code>，但是没有浏览器兼容问题。</p>
+
+<p>如果因为一些因素，需要底层的浏览器事件对象，只要使用 <code>nativeEvent</code> 属性就可以获取到它了。每一个<code>虚拟事件对象</code>都有下列的属性：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kr">boolean</span> <span class="nx">bubbles</span>
+<span class="kr">boolean</span> <span class="nx">cancelable</span>
+<span class="nx">DOMEventTarget</span> <span class="nx">currentTarget</span>
+<span class="kr">boolean</span> <span class="nx">defaultPrevented</span>
+<span class="nx">number</span> <span class="nx">eventPhase</span>
+<span class="kr">boolean</span> <span class="nx">isTrusted</span>
+<span class="nx">DOMEvent</span> <span class="nx">nativeEvent</span>
+<span class="k">void</span> <span class="nx">preventDefault</span><span class="p">()</span>
+<span class="k">void</span> <span class="nx">stopPropagation</span><span class="p">()</span>
+<span class="nx">DOMEventTarget</span> <span class="nx">target</span>
+<span class="nx">number</span> <span class="nx">timeStamp</span>
+<span class="nx">string</span> <span class="nx">type</span>
+</code></pre></div>
+<blockquote>
+<p>注意：</p>
+
+<p>对于 v0.12，在事件处理函数中返回 <code>false</code> 将不会阻止事件冒泡。取而代之的是在合适的应用场景下，手动调用 <code>e.stopPropagation()</code> 或者 <code>e.preventDefault()</code>。</p>
+</blockquote>
+<h2><a class="anchor" name=""></a>支持的事件 <a class="hash-link" href="events.html#">#</a></h2>
+<p>React 标准化了事件对象，因此在不同的浏览器中都会有相同的属性。</p>
+
+<p>如下的事件处理器在事件冒泡阶段触发。要在捕获阶段触发某个事件处理器，在事件名字后面追加 <code>Capture</code> 字符串；例如，使用 <code>onClickCapture</code> 而不是 <code>onClick</code> 来在捕获阶段处理点击事件。</p>
+<h3><a class="anchor" name=""></a>剪贴板事件 <a class="hash-link" href="events.html#">#</a></h3>
+<p>事件名：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">onCopy onCut onPaste
+</code></pre></div>
+<p>属性：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">DOMDataTransfer</span> <span class="nx">clipboardData</span>
+</code></pre></div><h3><a class="anchor" name=""></a>键盘事件： <a class="hash-link" href="events.html#">#</a></h3>
+<p>事件名：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">onKeyDown onKeyPress onKeyUp
+</code></pre></div>
+<p>属性：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kr">boolean</span> <span class="nx">altKey</span>
+<span class="nb">Number</span> <span class="nx">charCode</span>
+<span class="kr">boolean</span> <span class="nx">ctrlKey</span>
+<span class="kd">function</span> <span class="nx">getModifierState</span><span class="p">(</span><span class="nx">key</span><span class="p">)</span>
+<span class="nb">String</span> <span class="nx">key</span>
+<span class="nb">Number</span> <span class="nx">keyCode</span>
+<span class="nb">String</span> <span class="nx">locale</span>
+<span class="nb">Number</span> <span class="nx">location</span>
+<span class="kr">boolean</span> <span class="nx">metaKey</span>
+<span class="kr">boolean</span> <span class="nx">repeat</span>
+<span class="kr">boolean</span> <span class="nx">shiftKey</span>
+<span class="nb">Number</span> <span class="nx">which</span>
+</code></pre></div><h3><a class="anchor" name=""></a>焦点事件 <a class="hash-link" href="events.html#">#</a></h3>
+<p>事件名：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">onFocus onBlur
+</code></pre></div>
+<p>属性：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">DOMEventTarget</span> <span class="nx">relatedTarget</span>
+</code></pre></div><h3><a class="anchor" name=""></a>表单事件 <a class="hash-link" href="events.html#">#</a></h3>
+<p>事件名：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">onChange onInput onSubmit
+</code></pre></div>
+<p>更多关于 onChange 事件的信息，参考<a href="forms.html">表单</a>。</p>
+<h3><a class="anchor" name=""></a>鼠标事件 <a class="hash-link" href="events.html#">#</a></h3>
+<p>事件名：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">onClick onDoubleClick onDrag onDragEnd onDragEnter onDragExit onDragLeave
+onDragOver onDragStart onDrop onMouseDown onMouseEnter onMouseLeave
+onMouseMove onMouseOut onMouseOver onMouseUp
+</code></pre></div>
+<p>属性：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kr">boolean</span> <span class="nx">altKey</span>
+<span class="nb">Number</span> <span class="nx">button</span>
+<span class="nb">Number</span> <span class="nx">buttons</span>
+<span class="nb">Number</span> <span class="nx">clientX</span>
+<span class="nb">Number</span> <span class="nx">clientY</span>
+<span class="kr">boolean</span> <span class="nx">ctrlKey</span>
+<span class="kd">function</span> <span class="nx">getModifierState</span><span class="p">(</span><span class="nx">key</span><span class="p">)</span>
+<span class="kr">boolean</span> <span class="nx">metaKey</span>
+<span class="nb">Number</span> <span class="nx">pageX</span>
+<span class="nb">Number</span> <span class="nx">pageY</span>
+<span class="nx">DOMEventTarget</span> <span class="nx">relatedTarget</span>
+<span class="nb">Number</span> <span class="nx">screenX</span>
+<span class="nb">Number</span> <span class="nx">screenY</span>
+<span class="kr">boolean</span> <span class="nx">shiftKey</span>
+</code></pre></div><h3><a class="anchor" name=""></a>触摸事件 <a class="hash-link" href="events.html#">#</a></h3>
+<p>为了使触摸事件生效，在渲染所有组件之前调用 <code>React.initializeTouchEvents(true)</code>。</p>
+
+<p>事件名：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">onTouchCancel onTouchEnd onTouchMove onTouchStart
+</code></pre></div>
+<p>属性：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kr">boolean</span> <span class="nx">altKey</span>
+<span class="nx">DOMTouchList</span> <span class="nx">changedTouches</span>
+<span class="kr">boolean</span> <span class="nx">ctrlKey</span>
+<span class="kd">function</span> <span class="nx">getModifierState</span><span class="p">(</span><span class="nx">key</span><span class="p">)</span>
+<span class="kr">boolean</span> <span class="nx">metaKey</span>
+<span class="kr">boolean</span> <span class="nx">shiftKey</span>
+<span class="nx">DOMTouchList</span> <span class="nx">targetTouches</span>
+<span class="nx">DOMTouchList</span> <span class="nx">touches</span>
+</code></pre></div><h3><a class="anchor" name="ui-"></a>UI 事件 <a class="hash-link" href="events.html#ui-">#</a></h3>
+<p>事件名：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">onScroll
+</code></pre></div>
+<p>属性：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nb">Number</span> <span class="nx">detail</span>
+<span class="nx">DOMAbstractView</span> <span class="nx">view</span>
+</code></pre></div><h3><a class="anchor" name=""></a>鼠标滚轮滚动事件 <a class="hash-link" href="events.html#">#</a></h3>
+<p>事件名：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">onWheel
+</code></pre></div>
+<p>属性：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nb">Number</span> <span class="nx">deltaMode</span>
+<span class="nb">Number</span> <span class="nx">deltaX</span>
+<span class="nb">Number</span> <span class="nx">deltaY</span>
+<span class="nb">Number</span> <span class="nx">deltaZ</span>
+</code></pre></div>
+
+    <div class="docs-prevnext">
+      
+        <a class="docs-prev" href="tags-and-attributes.html">&larr; 上一条</a>
+      
+      
+        <a class="docs-next" href="dom-differences.html">下一条 &rarr;</a>
+      
+    </div>
+  </div>
+</section>
+
+
+    <footer class="wrap">
+      <div class="left">
+        A Facebook &amp; Instagram collaboration.
+      </div>
+      <div class="right">
+        &copy; 2013&ndash;2016 Facebook Inc.<br>
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+      </div>
+    </footer>
+  </div>
+  <div id="fb-root"></div>
+
+</body>
+</html>

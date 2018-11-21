@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>JSX 根节点的最大数量 | React</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="Reactjs,ReactJS,ReactJS中文,React,React中文,Reactjs中文文档">
+  <meta name="description" content="ReactJS中文文档, 用于构建用户界面的JAVASCRIPT库">
+
+  <meta property="og:title" content="JSX 根节点的最大数量 | React">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://facebook.github.io/react/tips/maximum-number-of-jsx-root-nodes.html">
+  <meta property="og:image" content="http://facebook.github.io/react/img/logo_og.png">
+  <meta property="og:description" content="用于构建用户界面的Javascript库">
+
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <link rel="stylesheet" href="../css/syntax.css">
+  <link rel="stylesheet" href="../css/codemirror.css">
+  <link rel="stylesheet" href="../css/react.css">
+
+  <!--[if lte IE 8]>
+  <script type="text/javascript" src="/react/js/html5shiv.min.js"></script>
+  <script type="text/javascript" src="/react/js/es5-shim.min.js"></script>
+  <script type="text/javascript" src="/react/js/es5-sham.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="../js/codemirror.js"></script>
+  <script type="text/javascript" src="../js/javascript.js"></script>
+  <script type="text/javascript" src="../js/react.js"></script>
+  <script type="text/javascript" src="../js/JSXTransformer.js"></script>
+  <script type="text/javascript" src="../js/live_editor.js"></script>
+  <script type="text/javascript" src="../js/showdown.js"></script>
+
+
+
+</head>
+<body>
+
+  <div class="container">
+
+
+
+    
+
+    <section class="content wrap documentationContent">
+  <div class="nav-docs">
+    <div class="nav-docs-section">
+      <h3>快速入门</h3>
+      <ul>
+        
+          <li>
+            <a href="../Documents/getting-started.html">快速开始</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/tutorial.html">教程</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/thinking-in-react.html">深入理解React</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>指南</h3>
+      <ul>
+        
+          <li>
+            <a href="../Documents/why-react.html">为什么使用 React?</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/displaying-data.html">数据呈现</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="../Documents/jsx-in-depth.html">深入理解JSX</a>
+                  </li>
+                
+                  <li>
+                    <a href="../Documents/jsx-spread.html">JSX的延展属性</a>
+                  </li>
+                
+                  <li>
+                    <a href="../Documents/jsx-gotchas.html">JSX的陷阱</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/interactivity-and-dynamic-uis.html">富交互性的动态用户界面</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/multiple-components.html">复合组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/reusable-components.html">可复用组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/transferring-props.html">传递 Props</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/forms.html">表单组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/working-with-the-browser.html">浏览器中的工作原理</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="../Documents/more-about-refs.html">关于Refs的更多内容</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/tooling-integration.html">Tooling Integration</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/addons.html">插件</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="../Documents/animation.html">动画</a>
+                  </li>
+                
+                  <li>
+                    <a href="../Documents/two-way-binding-helpers.html">双向绑定</a>
+                  </li>
+                
+                  <li>
+                    <a href="../Documents/class-name-manipulation.html">类名操作</a>
+                  </li>
+                
+                  <li>
+                    <a href="../Documents/test-utils.html">测试工具集</a>
+                  </li>
+                
+                  <li>
+                    <a href="../Documents/clone-with-props.html">克隆组件</a>
+                  </li>
+                
+                  <li>
+                    <a href="../Documents/update.html">Immutability Helpers</a>
+                  </li>
+                
+                  <li>
+                    <a href="../Documents/pure-render-mixin.html">PureRenderMixin</a>
+                  </li>
+                
+                  <li>
+                    <a href="../Documents/perf.html">性能分析工具</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>社区资源</h3>
+      <ul>
+        
+          <li>
+            <a href="../Documents/videos.html">视频</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/complementary-tools.html">其余工具</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/examples.html">范例</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>参考</h3>
+      <ul>
+        
+          <li>
+            <a href="../Documents/top-level-api.html">顶层 API</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/component-api.html">组件 API</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/component-specs.html">组件的详细说明和生命周期（Component Specs and Lifecycle）</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/tags-and-attributes.html">标签和属性支持</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/events.html">事件系统</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/dom-differences.html">与 DOM 的差异</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/special-non-dom-attributes.html">特殊的非 DOM 属性</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/reconciliation.html">Reconciliation</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/glossary.html">React （虚拟）DOM 术语</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>Flux</h3>
+      <ul>
+        
+          <li>
+            <a href="../Documents/flux-overview.html">Flux概述</a>
+            
+          </li>
+        
+          <li>
+            <a href="../Documents/flux-todo-list.html">Flux的TodoMVC教程</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <!-- Tips Nav -->
+  
+    <div class="nav-docs-section">
+      <h3>Tips</h3>
+      <ul>
+        
+          <li>
+            <a href="introduction.html">内容简介</a>
+          </li>
+        
+          <li>
+            <a href="inline-styles.html">内联样式</a>
+          </li>
+        
+          <li>
+            <a href="if-else-in-JSX.html">JSX 中的 If-Else</a>
+          </li>
+        
+          <li>
+            <a href="self-closing-tag.html">自闭合标签</a>
+          </li>
+        
+          <li>
+            <a href="maximum-number-of-jsx-root-nodes.html" class="active">JSX 根节点的最大数量</a>
+          </li>
+        
+          <li>
+            <a href="style-props-value-px.html">在样式props中快速制定像素值</a>
+          </li>
+        
+          <li>
+            <a href="children-props-type.html">子props的类型</a>
+          </li>
+        
+          <li>
+            <a href="controlled-input-null-value.html">值为 null 的 Controlled Input</a>
+          </li>
+        
+          <li>
+            <a href="componentWillReceiveProps-not-triggered-after-mounting.html">Mounting 后 componentWillReceiveProps 未被触发</a>
+          </li>
+        
+          <li>
+            <a href="props-in-getInitialState-as-anti-pattern.html">getInitialState 里的 Props 是一个反模式</a>
+          </li>
+        
+          <li>
+            <a href="dom-event-listeners.html">组件的 DOM 事件监听</a>
+          </li>
+        
+          <li>
+            <a href="initial-ajax.html">通过 AJAX 加载初始数据</a>
+          </li>
+        
+          <li>
+            <a href="false-in-jsx.html">JSX 的 false 处理</a>
+          </li>
+        
+          <li>
+            <a href="communicate-between-components.html">组件间的通信</a>
+          </li>
+        
+          <li>
+            <a href="expose-component-functions.html">Expose Component Functions</a>
+          </li>
+        
+          <li>
+            <a href="references-to-components.html">组件的引用</a>
+          </li>
+        
+          <li>
+            <a href="children-undefined.html">this.props.children undefined</a>
+          </li>
+        
+          <li>
+            <a href="use-react-with-other-libraries.html">与其他类库并行使用React</a>
+          </li>
+        
+          <li>
+            <a href="dangerously-set-inner-html.html">Dangerously Set innerHTML</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</div>
+
+
+  <div class="inner-content">
+    <h1>JSX 根节点的最大数量</h1>
+    <div class="subHeader"></div>
+    <p>目前， 一个 component 的 <code>render</code>，只能返回一个节点。如果你需要返回一堆 <code>div</code> ， 那你必须将你的组件用 一个<code>div</code> 或 <code>span</code> 或任何其他的组件包裹。</p>
+
+<p>切记，JSX 会被编译成常规的 JS； 因此返回两个函数也就没什么意义了，同样地，千万不要在三元操作符中放入超过一个子节点。</p>
+
+
+    <div class="docs-prevnext">
+      
+        <a class="docs-prev" href="self-closing-tag.html">&larr; Prev</a>
+      
+      
+        <a class="docs-next" href="style-props-value-px.html">Next &rarr;</a>
+      
+    </div>
+  </div>
+</section>
+
+
+    <footer class="wrap">
+      <div class="left">
+        A Facebook &amp; Instagram collaboration.
+      </div>
+      <div class="right">
+        &copy; 2013&ndash;2016 Facebook Inc.<br>
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+      </div>
+    </footer>
+  </div>
+  <div id="fb-root"></div>
+
+</body>
+</html>

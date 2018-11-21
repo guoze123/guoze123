@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>React （虚拟）DOM 术语 | React</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="Reactjs,ReactJS,ReactJS中文,React,React中文,Reactjs中文文档">
+  <meta name="description" content="ReactJS中文文档, 用于构建用户界面的JAVASCRIPT库">
+
+  <meta property="og:title" content="React （虚拟）DOM 术语 | React">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://facebook.github.io/react/docs/glossary.html">
+  <meta property="og:image" content="http://facebook.github.io/react/img/logo_og.png">
+  <meta property="og:description" content="用于构建用户界面的Javascript库">
+
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <link rel="stylesheet" href="../css/syntax.css">
+  <link rel="stylesheet" href="../css/codemirror.css">
+  <link rel="stylesheet" href="../css/react.css">
+
+  <!--[if lte IE 8]>
+  <script type="text/javascript" src="/react/js/html5shiv.min.js"></script>
+  <script type="text/javascript" src="/react/js/es5-shim.min.js"></script>
+  <script type="text/javascript" src="/react/js/es5-sham.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="../js/codemirror.js"></script>
+  <script type="text/javascript" src="../js/javascript.js"></script>
+  <script type="text/javascript" src="../js/react.js"></script>
+  <script type="text/javascript" src="../js/JSXTransformer.js"></script>
+  <script type="text/javascript" src="../js/live_editor.js"></script>
+  <script type="text/javascript" src="../js/showdown.js"></script>
+
+
+
+</head>
+<body>
+
+  <div class="container">
+
+
+
+    
+
+    <section class="content wrap documentationContent">
+  <div class="nav-docs">
+    <div class="nav-docs-section">
+      <h3>快速入门</h3>
+      <ul>
+        
+          <li>
+            <a href="getting-started.html">快速开始</a>
+            
+          </li>
+        
+          <li>
+            <a href="tutorial.html">教程</a>
+            
+          </li>
+        
+          <li>
+            <a href="thinking-in-react.html">深入理解React</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>指南</h3>
+      <ul>
+        
+          <li>
+            <a href="why-react.html">为什么使用 React?</a>
+            
+          </li>
+        
+          <li>
+            <a href="displaying-data.html">数据呈现</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="jsx-in-depth.html">深入理解JSX</a>
+                  </li>
+                
+                  <li>
+                    <a href="jsx-spread.html">JSX的延展属性</a>
+                  </li>
+                
+                  <li>
+                    <a href="jsx-gotchas.html">JSX的陷阱</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="interactivity-and-dynamic-uis.html">富交互性的动态用户界面</a>
+            
+          </li>
+        
+          <li>
+            <a href="multiple-components.html">复合组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="reusable-components.html">可复用组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="transferring-props.html">传递 Props</a>
+            
+          </li>
+        
+          <li>
+            <a href="forms.html">表单组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="working-with-the-browser.html">浏览器中的工作原理</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="more-about-refs.html">关于Refs的更多内容</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="tooling-integration.html">Tooling Integration</a>
+            
+          </li>
+        
+          <li>
+            <a href="addons.html">插件</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="animation.html">动画</a>
+                  </li>
+                
+                  <li>
+                    <a href="two-way-binding-helpers.html">双向绑定</a>
+                  </li>
+                
+                  <li>
+                    <a href="class-name-manipulation.html">类名操作</a>
+                  </li>
+                
+                  <li>
+                    <a href="test-utils.html">测试工具集</a>
+                  </li>
+                
+                  <li>
+                    <a href="clone-with-props.html">克隆组件</a>
+                  </li>
+                
+                  <li>
+                    <a href="update.html">Immutability Helpers</a>
+                  </li>
+                
+                  <li>
+                    <a href="pure-render-mixin.html">PureRenderMixin</a>
+                  </li>
+                
+                  <li>
+                    <a href="perf.html">性能分析工具</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>社区资源</h3>
+      <ul>
+        
+          <li>
+            <a href="videos.html">视频</a>
+            
+          </li>
+        
+          <li>
+            <a href="complementary-tools.html">其余工具</a>
+            
+          </li>
+        
+          <li>
+            <a href="examples.html">范例</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>参考</h3>
+      <ul>
+        
+          <li>
+            <a href="top-level-api.html">顶层 API</a>
+            
+          </li>
+        
+          <li>
+            <a href="component-api.html">组件 API</a>
+            
+          </li>
+        
+          <li>
+            <a href="component-specs.html">组件的详细说明和生命周期（Component Specs and Lifecycle）</a>
+            
+          </li>
+        
+          <li>
+            <a href="tags-and-attributes.html">标签和属性支持</a>
+            
+          </li>
+        
+          <li>
+            <a href="events.html">事件系统</a>
+            
+          </li>
+        
+          <li>
+            <a href="dom-differences.html">与 DOM 的差异</a>
+            
+          </li>
+        
+          <li>
+            <a href="special-non-dom-attributes.html">特殊的非 DOM 属性</a>
+            
+          </li>
+        
+          <li>
+            <a href="reconciliation.html">Reconciliation</a>
+            
+          </li>
+        
+          <li>
+            <a href="glossary.html" class="active">React （虚拟）DOM 术语</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>Flux</h3>
+      <ul>
+        
+          <li>
+            <a href="flux-overview.html">Flux概述</a>
+            
+          </li>
+        
+          <li>
+            <a href="flux-todo-list.html">Flux的TodoMVC教程</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <!-- Tips Nav -->
+  
+    <div class="nav-docs-section">
+      <h3>Tips</h3>
+      <ul>
+        
+          <li>
+            <a href="../tips/introduction.html">内容简介</a>
+          </li>
+        
+          <li>
+            <a href="../tips/inline-styles.html">内联样式</a>
+          </li>
+        
+          <li>
+            <a href="../tips/if-else-in-JSX.html">JSX 中的 If-Else</a>
+          </li>
+        
+          <li>
+            <a href="../tips/self-closing-tag.html">自闭合标签</a>
+          </li>
+        
+          <li>
+            <a href="../tips/maximum-number-of-jsx-root-nodes.html">JSX 根节点的最大数量</a>
+          </li>
+        
+          <li>
+            <a href="../tips/style-props-value-px.html">在样式props中快速制定像素值</a>
+          </li>
+        
+          <li>
+            <a href="../tips/children-props-type.html">子props的类型</a>
+          </li>
+        
+          <li>
+            <a href="../tips/controlled-input-null-value.html">值为 null 的 Controlled Input</a>
+          </li>
+        
+          <li>
+            <a href="../tips/componentWillReceiveProps-not-triggered-after-mounting.html">Mounting 后 componentWillReceiveProps 未被触发</a>
+          </li>
+        
+          <li>
+            <a href="../tips/props-in-getInitialState-as-anti-pattern.html">getInitialState 里的 Props 是一个反模式</a>
+          </li>
+        
+          <li>
+            <a href="../tips/dom-event-listeners.html">组件的 DOM 事件监听</a>
+          </li>
+        
+          <li>
+            <a href="../tips/initial-ajax.html">通过 AJAX 加载初始数据</a>
+          </li>
+        
+          <li>
+            <a href="../tips/false-in-jsx.html">JSX 的 false 处理</a>
+          </li>
+        
+          <li>
+            <a href="../tips/communicate-between-components.html">组件间的通信</a>
+          </li>
+        
+          <li>
+            <a href="../tips/expose-component-functions.html">Expose Component Functions</a>
+          </li>
+        
+          <li>
+            <a href="../tips/references-to-components.html">组件的引用</a>
+          </li>
+        
+          <li>
+            <a href="../tips/children-undefined.html">this.props.children undefined</a>
+          </li>
+        
+          <li>
+            <a href="../tips/use-react-with-other-libraries.html">与其他类库并行使用React</a>
+          </li>
+        
+          <li>
+            <a href="../tips/dangerously-set-inner-html.html">Dangerously Set innerHTML</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</div>
+
+
+  <div class="inner-content">
+    <h1>React （虚拟）DOM 术语</h1>
+    <div class="subHeader"></div>
+
+    <p>在 React 的术语中，有五个核心类型，区分它们是很重要的：</p>
+
+<ul>
+<li><a href="glossary.html#react-elements">ReactElement / ReactElement 工厂</a></li>
+<li><a href="glossary.html#react-nodes">ReactNode</a></li>
+<li><a href="glossary.html#react-components">ReactComponent / ReactComponent 类</a></li>
+</ul>
+<h2><a class="anchor" name="react-"></a>React 元素 <a class="hash-link" href="glossary.html#react-">#</a></h2>
+<p>React 中最主要的类型就是 <code>ReactElement</code>。它有四个属性：<code>type</code>，<code>props</code>，<code>key</code> 和 <code>ref</code>。它没有方法，并且原型上什么都没有。</p>
+
+<p>可以通过 <code>React.createElement</code> 创建该类型的一个实例。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">root</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>为了渲染一个新的树形结构到 DOM 中，你创建若干个 <code>ReactElement</code>，然后传给 <code>React.render</code> 作为第一个参数，同时将第二个参数设为一个正规的 DOM <code>元素</code> （<code>HTMLElement</code> 或者 <code>SVGElement</code>）。不要混淆 <code>ReactElement</code> 实例和 DOM <code>元素</code> 实例。一个 <code>ReactElement</code> 实例是一个轻量的，无状态的，不可变的，虚拟的 DOM <code>元素</code> 的表示。是一个虚拟 DOM。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">React</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="nx">root</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>
+</code></pre></div>
+<p>要添加属性到 DOM 元素，把属性对象作为第二个参数传入 <code>React.render</code>，把子级作为第三个参数传给 <code>React.render</code>。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">child</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="s1">&#39;Text Content&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">root</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">className</span><span class="o">:</span> <span class="s1">&#39;my-list&#39;</span> <span class="p">},</span> <span class="nx">child</span><span class="p">);</span>
+<span class="nx">React</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="nx">root</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>
+</code></pre></div>
+<p>如果使用 React JSX 语法，这些 <code>ReactElement</code> 实例自动创建。所以，如下代码是等价的：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">root</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nx">ul</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&quot;my-list&quot;</span><span class="o">&gt;</span>
+             <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">Text</span> <span class="nx">Content</span><span class="o">&lt;</span><span class="err">/li&gt;</span>
+           <span class="o">&lt;</span><span class="err">/ul&gt;;</span>
+<span class="nx">React</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="nx">root</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>
+</code></pre></div>
+<p><strong>工厂</strong></p>
+
+<p>一个 <code>ReactElement</code> 工厂就是一个简单的函数，该函数生成一个带有特殊 <code>type</code> 属性的 <code>ReactElement</code>。React 有一个内置的辅助方法用于创建工厂函数。事实上该方法就是这样的：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">createFactory</span><span class="p">(</span><span class="nx">type</span><span class="p">){</span>
+  <span class="k">return</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">type</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>该函数能创建一个方便的短函数，而不是总调用 <code>React.createElement(&#39;div&#39;)</code>。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">div</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createFactory</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">root</span> <span class="o">=</span> <span class="nx">div</span><span class="p">({</span> <span class="nx">className</span><span class="o">:</span> <span class="s1">&#39;my-div&#39;</span> <span class="p">});</span>
+<span class="nx">React</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="nx">root</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>
+</code></pre></div>
+<p>React 已经内置了常用 HTML 标签的工厂函数：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">root</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">DOM</span><span class="p">.</span><span class="nx">ul</span><span class="p">({</span> <span class="nx">className</span><span class="o">:</span> <span class="s1">&#39;my-list&#39;</span> <span class="p">},</span>
+             <span class="nx">React</span><span class="p">.</span><span class="nx">DOM</span><span class="p">.</span><span class="nx">li</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">&#39;Text Content&#39;</span><span class="p">)</span>
+           <span class="p">);</span>
+</code></pre></div>
+<p>如果使用 JSX 语法，就不需要工厂函数了。JSX 已经提供了一种方便的短函数来创建 <code>ReactElement</code> 实例。</p>
+<h2><a class="anchor" name="react-"></a>React 节点 <a class="hash-link" href="glossary.html#react-">#</a></h2>
+<p>一个 <code>ReactNode</code> 可以是：</p>
+
+<ul>
+<li><code>ReactElement</code></li>
+<li><code>string</code> （又名 <code>ReactText</code>）</li>
+<li><code>number</code> （又名 <code>ReactText</code>）</li>
+<li><code>ReactNode</code> 实例数组 （又名 <code>ReactFragment</code>）</li>
+</ul>
+
+<p>这些被用作其它 <code>ReactElement</code> 实例的属性，用于表示子级。实际上它们创建了一个 <code>ReactElement</code> 实例树。
+（These are used as properties of other <code>ReactElement</code>s to represent children. Effectively they create a tree of <code>ReactElement</code>s.）</p>
+<h2><a class="anchor" name="react-"></a>React 组件 <a class="hash-link" href="glossary.html#react-">#</a></h2>
+<p>在使用 React 开发中，可以仅使用 <code>ReactElement</code> 实例，但是，要充分利用 React，就要使用 <code>ReactComponent</code> 来封装状态化的组件。</p>
+
+<p>一个 <code>ReactComponent</code> 类就是一个简单的 JavaScript 类（或者说是“构造函数”）。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">MyComponent</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="p">...</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>当该构造函数调用的时候，应该会返回一个对象，该对象至少带有一个 <code>render</code> 方法。该对象指向一个 <code>ReactComponent</code> 实例。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">component</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyComponent</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span> <span class="c1">// never do this</span>
+</code></pre></div>
+<p>除非为了测试，正常情况下不要自己调用该构造函数。React 帮你调用这个函数。</p>
+
+<p>相反，把 <code>ReactComponent</code> 类传给 <code>createElement</code>，就会得到一个 <code>ReactElement</code> 实例。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">element</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="nx">MyComponent</span><span class="p">);</span>
+</code></pre></div>
+<p>或者使用 JSX：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">element</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nx">MyComponent</span> <span class="o">/&gt;</span><span class="p">;</span>
+</code></pre></div>
+<p>当该实例传给 <code>React.render</code> 的时候，React 将会调用构造函数，然后创建并返回一个 <code>ReactComponent</code>。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">component</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>
+</code></pre></div>
+<p>如果一直用相同的 <code>ReactElement</code> 类型和相同的 DOM <code>元素</code>容器调用 <code>React.render</code>，将会总是返回相同的实例。该实例是状态化的。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">componentA</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">MyComponent</span> <span class="o">/&gt;</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">componentB</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">MyComponent</span> <span class="o">/&gt;</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>
+<span class="nx">componentA</span> <span class="o">===</span> <span class="nx">componentB</span><span class="p">;</span> <span class="c1">// true</span>
+</code></pre></div>
+<p>这就是为什么不应该创建你自己的实例。相反，在创建之前，<code>ReactElement</code> 是一个虚拟的 <code>ReactComponent</code>。新旧 <code>ReactElement</code> 可以比对，从而决定是创建一个新的 <code>ReactComponent</code> 实例还是重用已有的实例。</p>
+
+<p><code>ReactComponent</code> 的 <code>render</code> 方法应该返回另一个 <code>ReactElement</code>，这就允许组件被组装。
+（The <code>render</code> method of a <code>ReactComponent</code> is expected to return another <code>ReactElement</code>. This allows these components to be composed. Ultimately the render resolves into <code>ReactElement</code> with a <code>string</code> tag which instantiates a DOM <code>Element</code> instance and inserts it into the document.）</p>
+<h2><a class="anchor" name=""></a>正式的类型定义 <a class="hash-link" href="glossary.html#">#</a></h2>
+<p><strong>入口点（Entry Point）</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">React.render = (ReactElement, HTMLElement | SVGElement) =&gt; ReactComponent;
+</code></pre></div>
+<p><strong>节点和元素（Nodes and Elements）</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">type ReactNode = ReactElement | ReactFragment | ReactText;
+
+type ReactElement = ReactComponentElement | ReactDOMElement;
+
+type ReactDOMElement = {
+  type : string,
+  props : {
+    children : ReactNodeList,
+    className : string,
+    etc.
+  },
+  key : string | boolean | number | null,
+  ref : string | null
+};
+
+type ReactComponentElement&lt;TProps&gt; = {
+  type : ReactClass&lt;TProps&gt;,
+  props : TProps,
+  key : string | boolean | number | null,
+  ref : string | null
+};
+
+type ReactFragment = Array&lt;ReactNode | ReactEmpty&gt;;
+
+type ReactNodeList = ReactNode | ReactEmpty;
+
+type ReactText = string | number;
+
+type ReactEmpty = null | undefined | boolean;
+</code></pre></div>
+<p><strong>类和组件（Classes and Components）</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">type ReactClass&lt;TProps&gt; = (TProps) =&gt; ReactComponent&lt;TProps&gt;;
+
+type ReactComponent&lt;TProps&gt; = {
+  props : TProps,
+  render : () =&gt; ReactElement
+};
+</code></pre></div>
+
+    <div class="docs-prevnext">
+      
+        <a class="docs-prev" href="reconciliation.html">&larr; 上一条</a>
+      
+      
+    </div>
+  </div>
+</section>
+
+
+    <footer class="wrap">
+      <div class="left">
+        A Facebook &amp; Instagram collaboration.
+      </div>
+      <div class="right">
+        &copy; 2013&ndash;2016 Facebook Inc.<br>
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+      </div>
+    </footer>
+  </div>
+  <div id="fb-root"></div>
+
+</body>
+</html>
